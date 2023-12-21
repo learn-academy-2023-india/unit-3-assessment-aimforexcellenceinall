@@ -1,11 +1,18 @@
 import React from "react"
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="handStyles">
-      {hand.map((card, index) => {
+      {props.hand.map((card, index) => {
+        // Style for the red diamonds
+        let cardClass = "cardStyles"
+        // Card is the variable iterated over
+        if (card.includes("♦️")) {
+          cardClass += " red-diamond "
+        }
+
         return (
-          <div className="cardStyles" key={index}>
+          <div key={index} className={cardClass}>
             {card}
           </div>
         )
@@ -13,3 +20,5 @@ const Card = () => {
     </div>
   )
 }
+
+export default Card
