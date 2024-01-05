@@ -39,19 +39,27 @@ PRs should be posted _before_ class begins on Tuesday, January 2, 2024.
 
 1. What are three (3) syntax difference between HTML and JSX?
 
+- For class attributes, HTML uses `class` but JSX uses `className`.
+- For style attributes, HTML uses a string but JSX uses an object.
+- For comment tags, HTML uses `<!--...-->` but JSX uses `{/* ... */}`.
+
 2. What is yarn? What file(s) are modified when you run the command yarn in your terminal?
+
+- Yarn is JavaScript's package manager that mainly manages a project's dependencies, such as involving React. Facebook, Google, Exponent, and Tilde developed it. Running yarn largely modifies the yarn.lock file, updates the node_modules directory with the specified dependencies, and may update the package.json file as needed so that the yarn.lock file ensures consistent and reproducible dependencies across diverse `development environments`, i.e., hardware and software tools blended to develop a project.
 
 3. What is the difference between state values and props in React?
 
-4. STRETCH (optional): What is the difference between a div tag and a span tag?
+- State is an object representing a component's local mutable state, while initialized and managed in a component via the useState hook or, in a class component, the this.state syntax. Props, aka properties, are like mail or family gifts that are read-only, unmodifiable data passed from a parent component to a child component.
+
+4. STRETCH (optional): What is the difference between a div tag and a span tag? Similar to HTML, JSX div tags group and organize related components, generating layout structures and styles to a larger section, e.g., a block-level component using `let` and `const` keywords. However, span tags create inline styling or manipulation for smaller content in a larger context. Div tags will also `contain` data in a new line while span tags have no line breaks.
 
 ### Looking Ahead: Terms for Next Unit
 
-1. Object-oriented programming:
+1. Object-oriented programming: (OOP) is a programming, modular model that organizes code into reusable, self-contained objects so that the code is more maintainable, scalable, and understandable.
 
-2. Ruby:
+2. Ruby: A dynamic, reflective, general-purpose OOP language that promotes simplicity, readability, and productivity across most operating systems. Developer Yukihiro Matsumoto (Matz) pioneered the high-level open source language in the 90s.
 
-3. Ruby Hashes:
+3. Ruby Hashes: Like a Javascript object, hashes are key-value pairs that store, organize, and retrieve data.
 
 ---
 
